@@ -86,7 +86,7 @@ const handleLogin = (event) => {
     loginPage.style.display = 'none';
     chat.style.display = 'flex';
 
-    websocket = new WebSocket("wss://devweb-chat-realtime-backend.onrender.com");;
+    websocket = new WebSocket("https://devweb-chat-realtime-backend.onrender.com");;
     websocket.onmessage = processMessage;
 
     inputUser.value = ''
