@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: #3E3683;
+    width: 60%;
+    height: 40%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.login-container h1 {
+    color: white;
+}
+
+#input-login {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#login-btn {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: rgb(183, 247, 199);
+}
+#login-btn:active {
+    opacity: 0.8;
+}
+
+.chat{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(233, 244, 237);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.chat input {
+    box-shadow: 10px 10px 49px -18px rgba(0,0,0,0.75);
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #3E3683;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-shadow: 10px 10px 49px -18px rgba(0,0,0,0.85);
+    border-radius: 0 0 8px 8px;
+}
+
+header h1, p {
+    color: white;
+}
+header p {
+    font-weight: lighter;
+}
+
+#icone-barra {
+    width: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+
+    background-color: transparent;
+    padding: 30px 30px 80px;
+    margin: 80px 0 10px 0;
+    
+    
+}
+
+
+.user-message, .other-message {
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 400px;
+    width: auto;
+    min-width: 280px;
+    
+    
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    min-height: 60px;
+    word-break: break-all;
+    
+    
+    
+}
+
+.message--sender {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: cadetblue;
+
+}
+
+.user-msg-paragraph {
+    width: 90%;
+}
+
+.user-message {
+    border-radius: 20px 20px 0 20px;
+    align-self: flex-end;
+    background-color: #e8ffd6; /* Cor de fundo para mensagens do usuário */
+    box-shadow: 10px 10px 49px -18px rgba(0,0,0,0.45);
+}
+
+.other-message {
+    border-radius: 0 20px 20px 20px;
+    align-self: flex-start;
+    background-color: #3E3683;
+    color: white; /* Cor de fundo para mensagens de outros usuários */
+    box-shadow: 10px 10px 49px -18px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(240, 255, 222);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+    margin-top: 30px;
+    gap: 10px;
+    width: 100%;
+    box-shadow: 10px 10px 49px -18px rgba(0,0,0,0.75);
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+footer form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    padding: 15px;
+    background-color: rgb(232, 216, 245);
+}
+
+footer form button {
+    border-radius: 5px;
+    background-color: #3E3683;
+    border: none;
+    color: white;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+footer form button:hover {
+    background-color: #5c5786;
+}
+footer form button:active {
+    opacity: 0.8;
+}
+

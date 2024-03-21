@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>WebChat - RealTime</title>
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="login-container">
+            <h1>Faça seu login</h1>
+            <form id="login-form" action="">
+                <input type="text" placeholder="Insira seu usuário" id="input-login" required>
+                <button id="login-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="chat">
+        <header>
+            <div>
+                <h1>DevWeb - Chat</h1>
+                <p id="qtde-users">10 usuários ativos</p>
+            </div>
+    
+        </header>
+
+        <main id="chat-messages-area"></main>
+
+        <footer>
+            <form id="chat-form" action="">
+                <input id="chat-input" type="text" placeholder="Digite sua mensagem aqui...">
+                <button type="submit">Enviar</button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
